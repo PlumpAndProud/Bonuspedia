@@ -1870,6 +1870,26 @@ p#breadcrumbs-date {
 /* responsive */
 /* responsive */
 
+/* Created 09.09.2023 */
+
+@media screen and (max-width: 1000px) {
+
+	div.container>div>div:nth-child(3) {
+		margin-top: 80px;
+	}
+
+	div.container>div>div:nth-child(2)>div.footer2colT>div>div>h2 {
+
+		margin-top: 20px;
+
+	}
+
+	div.container>div>div:nth-child(2)>div.footer2colT>div>div>div>p:nth-child(1) {
+		display: none;
+	}
+}
+
+
 /*Created 08.09.2023*/
 
 @media screen and (min-width: 1000px) {
