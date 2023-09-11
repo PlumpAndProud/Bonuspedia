@@ -1801,9 +1801,11 @@ button:active {
 	outline: none;
 }
 
-/*Created 31.08.2023*/
+/*Created 31.08.2023
+Edited 11.09.2023 +margin*/
 #site-header>div.header-inner.section-inner {
 	height: 100%;
+	margin: -6px 0;
 }
 
 /*Pagination START*/
@@ -1898,10 +1900,19 @@ p#breadcrumbs-date {
 	}
 }
 
-/*Created 08.09.2023*/
+/*Created 08.09.2023
+Edited 11.09.2023*/
 @media screen and (max-width: 1000px) {
 	div.header-inner {
-		padding-top: 1.3em !important;
+		padding-top: 1em !important;
+	}
+
+	button.toggle.search-toggle.mobile-search-toggle {
+		padding-left: 0px;
+	}
+
+	button.toggle.nav-toggle.mobile-nav-toggle {
+		padding: 0 0 0 40px;
 	}
 }
 
