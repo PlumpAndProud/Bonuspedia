@@ -20,7 +20,14 @@
 
 /* Grid */
 
-.grid-header,
+.grid-header {
+    grid-template-columns: 50% 50%;
+    align-content: space-between;
+    height: 150px;
+
+    position: relative;
+}
+
 .grid-faq {
     grid-template-columns: 50% 50%;
 }
@@ -39,7 +46,7 @@
 }
 
 .horizontal-blackbar {
-    height: 1.5vh;
+    height: 15px;
     width: 100%;
     background-color: #202023;
 
@@ -56,9 +63,13 @@
 }
 
 .code-wrapper {
-    margin: 20px 170px;
+    margin-top: 20px;
+    position: absolute;
+    right: 50px;
+
     width: 400px;
 }
+
 
 .code-copy-button {
     display: flex;
@@ -82,7 +93,7 @@
     align-items: center;
 }
 
-.image-conatiner {
+.image-container {
     display: flex;
     justify-content: center;
 }
@@ -133,4 +144,64 @@
 
 .code-time-to-expire {
     text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1000px) {
+
+    /* Black bars */
+
+    .vertical-blackbar {
+        display: none;
+    }
+
+    /* Grid */
+    .grid-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grid-faq {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Header */
+    .website-logo {
+        margin-left: 0;
+    }
+
+    .code-wrapper {
+        margin: 20px 0 20px 0;
+        position: static;
+    }
+
+    /* Main */
+
+    .code-logo-wrapper {
+        margin-top: 50px;
+    }
+
+    .code-name {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .code-description,
+    .faq-section,
+    .code-name,
+    .code-example {
+        margin: 15px 25px 0 25px;
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .code-faq {
+        text-align: center;
+    }
 }
